@@ -1,7 +1,7 @@
 -- HUMAN RESOURCE MACHINE PROGRAM --
 START:
     INBOX
-    COPYTO 0
+    COPYTO   0
     INBOX
     SUB 0
     JUMPZ TWOEQ
@@ -9,4 +9,10 @@ START:
 TWOEQ:
     ADD 0
     OUTBOX
+    INBOX
+    COPYTO   0
+    INBOX
+    SUB 0
+    JUMPZ TWOEQ
     JUMP START
+    
